@@ -7,8 +7,13 @@
 <body>
 	<?php
 
-	echo "<p> Hello world!</p>";
+	echo "<p> Welcome!</p>";
 
 	?>
+
+	<a href= login.php > Click here to login
+		<br>
+	<a href= register.php > Click here to register
+
 </body>
 </html>
