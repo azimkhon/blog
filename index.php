@@ -12,7 +12,7 @@
 	?>
 
 	<a href= login.php > Click here to login
-		<br>
+		<br><br>
 	<a href= register.php > Click here to register
 
 </body>
