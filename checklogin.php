@@ -1,32 +1,41 @@
+
 <?php
 
+ini_set('display_errors',1);
+
 $name = $_POST['username'];
-echo $username;
+echo $name;
 
 $pass = $_POST['password'];
 echo $pass;
 
-$user = 'root';
-$password = 'root';
-$db = 'blog';
-$host = 'localhost';
-$port = 8889;
 
-$link = mysqli_init();
-$mysql = mysqli_real_connect(
-   $link,
-   $host,
-   $user,
-   $password,
-   $db,
-   $port
-);
+$conn = new mysqli('localhost','root','root','blog');
 
-$mysql -> query("INSERT INTO 'users' ('username','password') VALUES ('$name', '$pass')");
-$mysql -> close();
+$conn -> set_charset("utf8");
 
+if ($conn->connect_error) {
+	die('Connection failed):'.$conn->connect_error);
+}
+
+$conn ->query("INSERT INTO `users` (`username`,`password`) VALUES ('$name', '$pass')");
+
+/*
+
+if (($conn->query) {
+	# code...
+}
+$conn -> close();
 
 
 
+echo ' <pre> ' ; print_r($conn->query($sql)); echo ' </pre>' ;
+
+echo ' <pre> ' ; print_r($conn); echo ' </pre>' ;
+
+echo ' <pre> ' ; print_r($sql); echo ' </pre>' ;
+
+echo ' <pre> ' ; print_r($conn->error); echo ' </pre>' ;
+*/
 
 ?>

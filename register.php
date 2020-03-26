@@ -6,8 +6,11 @@
 </head>
 <body>
 	<h2>Register Page</h2>
+
 	<a href=index.php>Click here to go back </a> <br/><br/>
+
 	<form action='checklogin.php' method='POST'>
+
 	Enter Username:
 	<input type='text' name='username' required='required'/>
 	<br/>
@@ -15,7 +18,8 @@
 	<input type='password' name='password' required='required'/>
 	<br/>
 	<button type='submit' value='register'/> Sign up </button>
-</form>
+	</form>
+	
 </body>
 
 </html>
