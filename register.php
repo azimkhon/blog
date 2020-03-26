@@ -7,14 +7,16 @@
 <body>
 	<h2>Register Page</h2>
 	<a href=index.php>Click here to go back </a> <br/><br/>
-	<form action=”checklogin.php” method=”POST”>
+	<form action='checklogin.php' method='POST'>
 	Enter Username:
-	<input type=”text” name=”username” required=”required” />
+	<input type='text' name='username' required='required'/>
 	<br/>
 	Enter password: 
-	<input type=”password” name=”password” required=”required” />
+	<input type='password' name='password' required='required'/>
 	<br/>
-	<button type=”submit” value=”Register”/> Sign up </button>
+	<button type='submit' value='register'/> Sign up </button>
+</form>
 </body>
 
 </html>
+
