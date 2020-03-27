@@ -3,22 +3,15 @@
 
 ini_set('display_errors',1);
 
-$name = $_POST['username'];
-echo $name;
+$username = $_POST['username'];
 
-$pass = $_POST['password'];
-echo $pass;
-
+$password = $_POST['password'];
 
 $conn = new mysqli('localhost','root','root','blog');
 
-$conn -> set_charset("utf8");
+$conn ->query("INSERT INTO `users` (`username`,`password`) VALUES ('$username', '$password')");
 
-if ($conn->connect_error) {
-	die('Connection failed):'.$conn->connect_error);
-}
-
-$conn ->query("INSERT INTO `users` (`username`,`password`) VALUES ('$name', '$pass')");
+$conn -> close();
 
 /*
 
