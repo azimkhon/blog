@@ -7,7 +7,7 @@ $username = $_POST['username'];
 
 $password = $_POST['password'];
 
-$conn = new mysqli('localhost','root','root','blog');
+require "connect.php";
 
 $conn ->query("INSERT INTO `users` (`username`,`password`) VALUES ('$username', '$password')");
 

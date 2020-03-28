@@ -9,7 +9,7 @@
 
 	<a href=index.php>Click here to go back </a> <br/><br/>
 
-	<form action='checklogin.php' method='POST'>
+	<form action='backend/register.php' method='POST'>
 
 	Enter Username:
 	<input type='text' name='username' required='required'/>
@@ -17,7 +17,7 @@
 	Enter password: 
 	<input type='password' name='password' required='required'/>
 	<br/>
-	<button type='submit' value='register'/> Sign up </button>
+	<button type='submit' value='register'/> Register </button>
 	</form>
 	
 </body>
