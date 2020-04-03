@@ -9,6 +9,7 @@ $username = $_POST['username'];
 
 $password = $_POST['password'];
 
+
 require "connect.php";
 
 $result = $conn->query("SELECT * FROM `users` WHERE `username` = '$username' AND `password` = '$password'");
