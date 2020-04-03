@@ -3,14 +3,13 @@
 
 session_start();
 
+require_once "connect.php";
+
 //ini_set('display_errors',1);
 
 $username = $_POST['username'];
 
 $password = $_POST['password'];
-
-
-require "connect.php";
 
 $result = $conn->query("SELECT * FROM `users` WHERE `username` = '$username' AND `password` = '$password'");
 
@@ -21,8 +20,6 @@ $users = $result->fetch_assoc();
 if( count($users) == 0)
 	echo "User not found";
 else 
-
-	
 	$_SESSION['user_id'] = $user['id'];	
 	$_SESSION['name'] = $_POST['username'];
 	echo "Authentificated successfully";
