@@ -1,6 +1,8 @@
 
 <?php
 
+session_start();
+
 //ini_set('display_errors',1);
 
 $username = $_POST['username'];
@@ -19,7 +21,7 @@ if( count($users) == 0)
 	echo "User not found";
 else 
 
-	session_start();
+	
 	$_SESSION['user_id'] = $user['id'];	
 	$_SESSION['name'] = $_POST['username'];
 	echo "Authentificated successfully";
