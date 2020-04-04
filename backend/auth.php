@@ -17,13 +17,20 @@ $users = $result->fetch_assoc();
 
 //echo ' <pre> ' ; print_r($users); echo ' </pre>' ;
 
-if( count($users) == 0)
+if( count($users) == 0) {
 	echo "User not found";
-else 
+
+}
+else if($username="admin") {
+	header('Location: ../admin.php');
+}
+else {
+	
 	$_SESSION['user_id'] = $user['id'];	
 	$_SESSION['name'] = $_POST['username'];
 	echo "Authentificated successfully";
 	header('Location: ../index.php');
+}
 
 $conn -> close();
 

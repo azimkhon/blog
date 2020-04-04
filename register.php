@@ -1,3 +1,7 @@
+<?php 
+	session_start();
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +14,17 @@
 
 	<a href=index.php> Click here to go back </a> <br><br>
 
-	<form action='backend/register.php' method='POST'>
+	<?php 
+
+	if($_SESSION['username_alert']) {
+        echo '<p> ' . $_SESSION['username_alert'] . ' </p>';
+    }
+
+    unset($_SESSION['username_alert']);
+
+	 ?>
+
+	<form action='backend/reg.php' method='POST'>
 
 	Enter Username:
 	<input type='text' name='username' required='required'>
