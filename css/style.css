@@ -1,0 +1,147 @@
+ @charset "utf-8";
+
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	outline : none;
+ }
+
+ html {
+ 	height: 100%;
+ 	width: 100%;
+ 	background-color: #fff;
+ 	color: #333;
+ 	font-family: "Segoe UI", Arial, sans-serif;
+ 	font-size: 1em;
+ 	line-height: 135%;
+ }
+
+ a {
+ 	color: #dd4a00;
+ 	text-decoration: none;
+ 	-webkit-transition: all.6s ease;
+ 	-o-transition: all.6s ease;
+ 	-moz-transition: all.6s ease;
+ 	-ms-transition: all.6s ease;
+ 	transition: all.6s ease;
+ }
+
+ a:hover {
+ 	color: #ffa300;
+ }
+
+ a, a:hover {
+ 	-webkit-transition: all.6s ease;
+ 	-o-transition: all.6s ease;
+ 	-moz-transition: all.6s ease;
+ 	-ms-transition: all.6s ease;
+ 	transition: all.6s ease;
+ }
+
+ .clear {
+ 	clear: both;
+ }
+
+ /* header styles */
+
+ header {
+ 	width: 98%;
+ 	float: left;
+ 	padding: 1%;
+ 	background-color: #fafafa;
+ 	border-bottom: 2px solid silver;
+ }
+
+ header #logo {
+ 	width:  40%;
+ 	float:  left;
+ 	font-style: bold;
+ 	font-size: 1.3em;
+ }
+
+ header #menuhead {
+ 	width:  25%;
+ 	float:  left;
+ }
+
+ header #menuhead div {
+ 	float: left;
+ 	margin-right: 5%;
+ }
+
+ header #menuhead div a {
+ 	color: #122179;
+ }
+
+ header #menuhead div a:hover {
+ 	color: #575be2;
+ }
+
+ header #regauth {
+ 	width:  30%;
+ 	float:  left;
+ 	text-align: right;
+ }
+
+ /* Main Styles */
+
+ #wrapper {
+ 	margin-top: 20px;
+ 	width: 80%;
+ 	margin-left: 10%;
+ 	float: left;
+ }
+
+ #wrapper #leftcol {
+ 	width: 70%;
+ 	margin-right: 10%;
+ 	background-color: #8dd410;
+ 	float: left;
+ }
+
+ #wrapper #rightcol {
+ 	width: 20%;
+ 	background-color: #c8c211;
+ 	float: left;
+ }
+
+ /* Footer Sytle */
+
+ footer {
+ 	width: 98%;
+ 	float: left;
+ 	padding: 1%;
+ 	background-color: #fafafa;
+ 	border-top: 2px solid silver;
+ 	margin-top: 10px;
+ }
+
+ footer #socials{
+ 	float: left;
+ 	width: 50%;
+ }
+
+ footer #rights {
+ 	float: right;
+ 	text-align: right;
+ 	width: 50%;
+ 	font-size: 1.1em;
+ }
+
+ footer div a {
+ 	margin-right: 1%;
+ 	color: #0645ff;
+ 	text-decoration: none;
+ 	-webkit-transition: all.6s ease;
+ 	-o-transition: all.6s ease;
+ 	-moz-transition: all.6s ease;
+ 	-ms-transition: all.6s ease;
+ 	transition: all.6s ease;
+ }
+
+ footer div a:hover {
+ 	color: #0f00bb;
+ }
+
+
+

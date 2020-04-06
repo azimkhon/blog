@@ -1,1 +1,1 @@
-# blog
+# simple blog with basic CRUD admin panel
