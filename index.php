@@ -7,6 +7,9 @@
     <script src="https://kit.fontawesome.com/c221214394.js" crossorigin="anonymous"></script>
 </head>
 <body>
+	
+	<!-- Header block -->
+
     <header>
     	<div id="logo">
     		<a href="/blog" title="Main page">Personal Blog</a> 
@@ -26,6 +29,8 @@
     	</div>
     </header>
 
+    <!-- Main blocks -->
+
     <div id="wrapper">
 
     	<div id="leftcol">
@@ -33,11 +38,19 @@
     	</div>
 
     	<div id="rightcol">
-    		ss
-    	</div>
 
+    		<div class="banner">
+    			<img src="img/ban1.png" alt="Ad banner">
+    		</div>
+
+    		<div class="banner">
+    			<img src="img/ban2.png" alt="Ad banner">
+    		</div>
+
+    	</div>
     </div>
 
+    <!-- Footer block -->
 
     <footer>
     	<div id="socials">
