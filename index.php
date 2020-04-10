@@ -1,65 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Personal Blog</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://kit.fontawesome.com/c221214394.js" crossorigin="anonymous"></script>
-</head>
+
+    <?php
+    $title = "Personal Blog";
+    require_once "blocks/head.php"?>
+
 <body>
-	
-	<!-- Header block -->
 
-    <header>
-    	<div id="logo">
-    		<a href="/blog" title="Main page">Personal Blog</a> 
-    	</div>
-
-    	<div id="menuhead">
-    		<div>
-    			<a href="about.php">About us</a>
-    		</div> 
-    		<div>
-    			<a href="contact.php">Contact us</a>
-    		</div>
-    	</div>
-
-    	<div id="regauth">
-    		<a href="auth.php"> Sign in </a> | <a href="reg.php">Sign up</a>
-    	</div>
-    </header>
+    <?php require_once "blocks/header.php"?>
 
     <!-- Main blocks -->
 
     <div id="wrapper">
-
     	<div id="leftcol">
-    		ss
+    		<div class="bigarticle">
+                <img src="img/ban1.png" alt="Article image">
+                <h2>Article title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa cupiditate dolore doloribus eligendi et excepturi in natus, neque odio perspiciatis quae quibusdam! Accusamus, exercitationem minus perspiciatis porro reprehenderit ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, reprehenderit, sint. Autem, natus, vitae. Ab at autem dignissimos dolores doloribus ducimus, earum esse laudantium maiores minima pariatur quae vitae, voluptatum.</p>
+                <a href="#"><div>See More ... </div></a>
+            </div>
+            <div class="clear"><br></div>
+            <div id="article">
+                <img src="img/ban1.png" alt="Article image">
+                <h2>Article title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa cupiditate dolore doloribus eligendi et excepturi in natus, neque odio perspiciatis quae quibusdam! Accusamus, exercitationem minus perspiciatis porro reprehenderit ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, reprehenderit, sint. Autem, natus, vitae. Ab at autem dignissimos dolores doloribus ducimus, earum esse laudantium maiores minima pariatur quae vitae, voluptatum.</p>
+                <a href="#"><div>See More ... </div></a>
+            </div>
+            <div id="article">
+                <img src="img/ban1.png" alt="Article image">
+                <h2>Article title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa cupiditate dolore doloribus eligendi et excepturi in natus, neque odio perspiciatis quae quibusdam! Accusamus, exercitationem minus perspiciatis porro reprehenderit ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, reprehenderit, sint. Autem, natus, vitae. Ab at autem dignissimos dolores doloribus ducimus, earum esse laudantium maiores minima pariatur quae vitae, voluptatum.</p>
+                <a href="#"><div>See More ... </div></a>
+            </div>
     	</div>
 
-    	<div id="rightcol">
+        <?php require_once "blocks/rightcol.php"?>
 
-    		<div class="banner">
-    			<img src="img/ban1.png" alt="Ad banner">
-    		</div>
-
-    		<div class="banner">
-    			<img src="img/ban2.png" alt="Ad banner">
-    		</div>
-
-    	</div>
     </div>
 
-    <!-- Footer block -->
+    <?php require_once "blocks/footer.php"?>
 
-    <footer>
-    	<div id="socials">
-    		<a href="#" title="Twitter page"><i class="fab fa-twitter-square fa-2x"></i></a>
-    		<a href="#" title="Facebook community"><i class="fab fa-facebook-square fa-2x"></i></a>
-    	</div>
-    	<div id="rights">
-    		All rights are reserved &copy; <?php echo date('Y') ?>
-    	</div>
-    </footer>
 </body>
 </html>

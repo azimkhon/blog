@@ -101,12 +101,131 @@
  	float: left;
  }
 
+ /* Left Colummn Styles */
+
  #wrapper #leftcol {
  	width: 70%;
  	margin-right: 10%;
- 	background-color: #8dd410;
  	float: left;
  }
+
+ #wrapper #leftcol .bigarticle {
+	 width: 78%;
+	 margin-left: 10%;
+	 background-color: #f1f6c8;
+	 padding: 1%;
+	 float: left;
+ }
+
+ #wrapper #leftcol .bigarticle img, #wrapper #leftcol #article img {
+	 width: 100%;
+	 float: left;
+	 margin-bottom: 10px;
+ }
+
+ #wrapper #leftcol .bigarticle h2, #wrapper #leftcol #article h2 {
+	 font-weight: normal;
+	 font-size: 1.3em;
+	 color: #1000f6;
+	 font-family: "Comic Sans MS", Arial, sans-serif;
+ }
+
+ #wrapper #leftcol .bigarticle p, #wrapper #leftcol #article p {
+	 width: 95%;
+	 margin-left: 5%;
+ }
+
+ #wrapper #leftcol .bigarticle div, #wrapper #leftcol #article div {
+	 padding: 5px;
+	 border-radius: 10px;
+	 background-color: #fffa66;
+	 color: #9f630b;
+	 width: 30%;
+	 text-align: center;
+	 margin-top: 10px;
+ }
+
+ #wrapper #leftcol .bigarticle div:hover, #wrapper #leftcol #article div:hover {
+	 background-color: #c1ff17;
+ }
+
+ #wrapper #leftcol #article {
+
+	 width: 40%;
+	 margin-left: 5%;
+	 background-color: #f6f6f6;
+	 padding: 1%;
+	 float: left;
+
+ }
+
+ /* About us page style */
+
+ #wrapper #leftcol .about-us {
+
+	 width: 76%;
+	 margin-left: 10%;
+	 border: 1px solid #ffeedc;
+	 background-color: #e8f4e6;
+	 padding: 2%;
+
+ }
+
+ /* Contact us page style */
+
+ #wrapper #leftcol input {
+	 width: 40%;
+	 padding: 5px;
+	 margin-left: 30%;
+	 margin-bottom: 10px;
+	 float: left;
+	 border-radius: 10px;
+	 border: 2px solid silver;
+	 font-family: "Segoe UI", Arial, sans-serif;
+	 font-size: 1.1em;
+
+ }
+
+ #wrapper #leftcol input:focus {
+	 border: 2px solid #2b990c;
+ }
+
+ #wrapper #leftcol #done {
+	 width: 20%;
+ }
+
+ #wrapper #leftcol #done:hover {
+	 background-color: #adff4a;
+	 border: 2px solid #2b990c;
+	 cursor: pointer;
+ }
+
+ #wrapper #leftcol #message {
+	 width: 40%;
+	 padding: 5px;
+	 margin-left: 30%;
+	 margin-bottom: 10px;
+	 float: left;
+	 border-radius: 10px;
+	 border: 2px solid silver;
+	 font-family: "Segoe UI", Arial, sans-serif;
+	 font-size: 1.1em;
+	 resize: none;
+ }
+
+ #wrapper #leftcol #message:focus {
+	 border: 2px solid #2b990c;
+ }
+
+ #wrapper #leftcol #messageShow {
+	 float: left;
+	 padding: 1%;
+	 width: 100%;
+	 text-align: center;
+	 color: #f0260a;
+ }
+
+ /* Right Column Styles */
 
  #wrapper #rightcol {
  	width: 20%;
@@ -140,8 +259,8 @@
 
  footer #rights {
  	float: right;
- 	text-align: right;
- 	width: 50%;
+ 	text-align: center;
+ 	width: 40%;
  	font-size: 1.1em;
  }
 
