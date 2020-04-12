@@ -17,18 +17,22 @@
     	<div id="leftcol">
 
             <?php
+
                 for ($i=0; $i < count($news); $i++) {
-                    if ($i==0)
+                    if ($i == 0)
                         echo "<div class=\"bigarticle\">";
                     else
                         echo "<div id=\"article\">";
-                /*    echo '
-                <img src=\"img/'.$news[$i]["id"].''.png\" alt=\"Article image'.$news[$i]["id"].'\">
-                <h2>'.$news[$i]["title"].'</h2>
-                <p>'.$news[$i]["full_text"].'</p>
-                <a href=\"#\"><div>See More ... </div></a>'; */
-
+                   echo '
+                                <img src="img/'.$news[$i]["id"].'.png" alt="Article image'.$news[$i]["id"].'">
+                                <h2>'.$news[$i]["title"].'</h2>
+                                <p>'.$news[$i]["full_text"].'</p>
+                                <a href="article.php"><div>See More ... </div></a>
+                            </div>';
+                    if($i == 0)
+                        echo "<div class=\"clear\"><br></div>";
                 }
+                
             ?>
 
     	</div>

@@ -5,7 +5,7 @@ require_once "db.php";
     function getNews($limit) {
         global $mysqli;
         connectDB();
-        $result = $mysqli->query("SELECT * FROM `posts` ORDER BY `id` DESC $limit");
+        $result = $mysqli->query("SELECT * FROM `posts` ORDER BY `id` DESC LIMIT $limit");
         closeDB();
         return resultToArray($result);
     }
