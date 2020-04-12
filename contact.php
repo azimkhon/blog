@@ -2,6 +2,7 @@
 <html lang="en">
 
 <?php
+
 $title = "Contact us";
 require_once "blocks/head.php"?>
 

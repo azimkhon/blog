@@ -3,7 +3,7 @@
 
 session_start();
 
-require_once "connect.php";
+require_once "db.php";
 
 $username = $_POST['username'];
 
