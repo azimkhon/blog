@@ -3,7 +3,7 @@
 
     <?php
     $title = "My personal Blog";
-    require_once "blocks/head.php"
+    require_once "blocks/head.php";
     $news = getNews(3);
     ?>
 
