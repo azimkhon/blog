@@ -103,16 +103,31 @@
 
  /* Left Colummn Styles */
 
- #wrapper #leftcol {
- 	width: 70%;
- 	margin-right: 10%;
- 	float: left;
+ @media (min-width: 800px) {
+	 #wrapper #leftcol {
+		 width: 70%;
+		 margin-right: 10%;
+		 float: left;
+	 }
+ }
+
+ @media (max-width: 799px) {
+	 #wrapper #leftcol {
+		 width: 90%;
+		 margin-right: 5%;
+		 float: left;
+	 }
+ }
+
+
+ #wrapper #leftcol div p {
+	 margin-top: 8px;
  }
 
  #wrapper #leftcol .bigarticle {
 	 width: 78%;
 	 margin-left: 10%;
-	 background-color: #f1f6c8;
+	 background-color: #f6f6f6;
 	 padding: 1%;
 	 float: left;
  }
@@ -126,7 +141,7 @@
  #wrapper #leftcol .bigarticle h2, #wrapper #leftcol #article h2 {
 	 font-weight: normal;
 	 font-size: 1.3em;
-	 color: #1000f6;
+	 color: #3854a9;
 	 font-family: "Comic Sans MS", Arial, sans-serif;
  }
 
@@ -227,11 +242,20 @@
 
  /* Right Column Styles */
 
- #wrapper #rightcol {
- 	width: 20%;
- 	background-color: #fafafa;
- 	float: left;
- }
+ @media (min-width: 800px){
+	 #wrapper #rightcol {
+		width: 20%;
+		background-color: #fafafa;
+		float: left;
+ }}
+
+ @media (max-width: 799px) {
+	 #wrapper #rightcol {
+		 width: 80%;
+		 margin-right: 5%;
+		 background-color: #fafafa;
+		 float: left;
+ }}
 
  #wrapper #rightcol .banner {
 	width: 100%;

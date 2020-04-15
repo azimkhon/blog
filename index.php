@@ -2,9 +2,10 @@
 <html lang="en">
 
     <?php
+    require_once "backend/functions.php";
     $title = "My personal Blog";
     require_once "blocks/head.php";
-    $news = getNews(3);
+    $news = getNews(3, NULL);
     ?>
 
 <body>
@@ -27,7 +28,7 @@
                                 <img src="img/'.$news[$i]["id"].'.png" alt="Article image'.$news[$i]["id"].'">
                                 <h2>'.$news[$i]["title"].'</h2>
                                 <p>'.$news[$i]["full_text"].'</p>
-                                <a href="article.php"><div>See More ... </div></a>
+                                <a href="article.php?id='.$news[$i]["id"].'"><div>See More ... </div></a>
                             </div>';
                     if($i == 0)
                         echo "<div class=\"clear\"><br></div>";

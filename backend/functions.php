@@ -2,12 +2,17 @@
 
 require_once "db.php";
 
-    function getNews($limit) {
+    function getNews($limit, $id) {
         global $mysqli;
         connectDB();
-        $result = $mysqli->query("SELECT * FROM `posts` ORDER BY `id` DESC LIMIT $limit");
+        if($id)
+            $where = "WHERE `id` = ".$id;
+        $result = $mysqli->query("SELECT * FROM `posts` $where ORDER BY `id` DESC LIMIT $limit");
         closeDB();
-        return resultToArray($result);
+        if(!$id)
+            return resultToArray($result);
+        else
+            return $result->fetch_assoc();
     }
 
     function resultToArray($result) {
