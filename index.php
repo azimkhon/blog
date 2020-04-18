@@ -1,3 +1,5 @@
+<!-- running in windows 10 -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,7 +35,7 @@
                     if($i == 0)
                         echo "<div class=\"clear\"><br></div>";
                 }
-                
+
             ?>
 
     	</div>
