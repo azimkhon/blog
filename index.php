@@ -1,9 +1,3 @@
-<!-- running in windows 10
-this is mac line
-3rd windows line -->
-
-
-<!--        4th line windows      -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +5,7 @@ this is mac line
     require_once "backend/functions.php";
     $title = "My personal Blog";
     require_once "blocks/head.php";
-    $news = getNews(3, NULL);
+    $news = getNews(4, NULL);
     ?>
 
 <body>
